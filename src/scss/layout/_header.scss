@@ -1,3 +1,4 @@
+@use '../core/variables' as vars;
 .page__header {
     width: 100vw;
     min-width: 320px;
@@ -6,7 +7,8 @@
     background-image:url("../../images/cover.jpeg");
     background-repeat: no-repeat; 
     background-size: cover;
-    background-position: 85%;
+    background-position: 82%;
+
     
     .menu__link--adalab {
         width: 36.4px;
@@ -26,23 +28,38 @@
         justify-content: center;
 
             .hero__h1--title {
-                padding-top: 297px;
+                margin-top: 297px;
                 text-transform: uppercase;
                 font-size: 1.876rem; /*30px*/
                 font-weight: 600;
                 text-align: center;
                 line-height: 3.125rem; /*50*/
+
                 }
                 .hero__p--subtitle {
-                font-size: 1rem; /*16px*/
+                
+                font-size: 16px; /*16px*/
                 line-height: 1.1875rem; /*19px*/
                 padding-left: 2.1375rem; /*34.2px*/
                 padding-right: 2.65625rem;/*42.5*/
                 /*padding-bottom: 8.125rem; /*130px*/
+                font-family: vars.$font-simpletext;
+                text-align: center;
 
+                
                 }
-        }
-
-        
+                .hero__img--scroll-down {
+                width: 38.2px;
+                height: 38.2px;
+                background-color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                margin-left: 132.3px;
+                margin-bottom: 38.2px;
+                
+                }
+        }  
         
 }
