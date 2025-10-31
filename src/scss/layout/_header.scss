@@ -1,8 +1,33 @@
 .page__header {
- min-width: 320px;
- min-height: 553px;
- background-image:url(../../public/images/cover.jpeg);
+    width: 100vw;
+    min-width: 320px;
+   /* min-height: 553px;*/
+    min-height: 553px;
+    background-image:url("../../images/cover.jpeg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: 90%;
+    
+    .menu__link--adalab {
+        width: 36.4px;
+        height: 36.8px;
+        background-color: #6c933e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .hero__title {
+            color: white;
 
+            padding-top: 297px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: end;
+            
 
+        }
 
-  }
+        
+        
+}
