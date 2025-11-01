@@ -1,0 +1,32 @@
+@use '../core/variables' as vars;
+.main__section--white {
+    width: 100vw;
+    height: auto;
+    margin-left: 0.8125em;/*13*/
+    .section-white__subtitle{
+        margin-top: 2.125em;/*34px*/
+        font-family: vars.$font-simpletext;
+        text-transform: uppercase;
+        font-size: 0.875em; /*14px*/
+        color: vars.$color-bg;
+        line-height: 1.875em;/*30px*/
+        margin-right: 3.9375em;/*63*/
+    }
+    .section-white__title{
+        text-transform: uppercase;
+        font-size: 1.375em;/*22px*/
+        line-height: 1.876em;/*30px*/
+        /*margin-right: 1.0625em;/*17*/
+    }
+    .section-white__botton{
+        width: 160px;
+        height: 45px;
+        border-bottom: 2px solid;
+        border-color: vars.$color-bg;
+        border-radius: 22.5px;
+        font-size: 20px;
+        text-align: center;
+        color: vars.$color-bg;
+        background-color: white;
+    }
+}

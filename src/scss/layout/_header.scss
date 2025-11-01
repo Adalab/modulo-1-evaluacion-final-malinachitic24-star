@@ -13,7 +13,7 @@
     .menu__link--adalab {
         width: 36.4px;
         height: 36.8px;
-        background-color: #6c933e;
+        background-color: vars.$color-bg;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -26,9 +26,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
 
             .hero__h1--title {
-                margin-top: 297px;
+                margin-top: 18.5625rem;/*297px*/
                 text-transform: uppercase;
                 font-size: 1.876rem; /*30px*/
                 font-weight: 600;
@@ -45,8 +46,7 @@
                 /*padding-bottom: 8.125rem; /*130px*/
                 font-family: vars.$font-simpletext;
                 text-align: center;
-
-                
+                margin-top: 1rem;
                 }
                 .hero__img--scroll-down {
                 width: 38.2px;
@@ -56,10 +56,9 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 50%;
-                margin-left: 132.3px;
-                margin-bottom: 38.2px;
-                
+                margin-top: 1rem;
                 }
-        }  
+                
+        } 
         
 }
