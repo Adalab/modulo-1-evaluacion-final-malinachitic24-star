@@ -43,9 +43,8 @@
     margin-bottom: 28px;
     margin-top: 48px;
     margin-left: 2px;
-      .section-white__button:hover{
-        clear: inherit;
-      
+    .section-white__button:hover {
+      clear: inherit;
     }
   }
 }
@@ -62,18 +61,18 @@
   align-items: center;
   gap: 0.5rem;
 
-&__header{
-  margin-top: 18px;
-  &-slogan {
-    color: #626262;
-    font-size: 12px;
-    /*creo que hay un error y no debería tener line height 30*/
-  }
-  &-title {
-    color: vars.$color-secondary-repetsubtitle;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
+  &__header {
+    margin-top: 18px;
+    &-slogan {
+      color: #626262;
+      font-size: 12px;
+      /*creo que hay un error y no debería tener line height 30*/
+    }
+    &-title {
+      color: vars.$color-secondary-repetsubtitle;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
   }
   &__list {
     display: grid;
