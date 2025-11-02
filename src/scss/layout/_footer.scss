@@ -4,5 +4,7 @@
     left: 0;
     bottom: 0;
     padding: 1rem;
-    color: vars.$color-secondary;
+    color: vars.$color-main;
+    background-color: vars.$color-secondary-fp;
+    text-transform: uppercase;
 }
