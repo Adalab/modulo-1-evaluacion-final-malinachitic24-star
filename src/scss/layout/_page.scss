@@ -1,7 +1,6 @@
-@use '../core/variables' as vars;
+@use "../core/variables" as vars;
 
 body {
-   /* width: 100vw;
-    height: 100vh;*/
-    font-family: vars.$font-main;
+  font-family: vars.$font-main;
+  overflow-x:hidden;
 }
