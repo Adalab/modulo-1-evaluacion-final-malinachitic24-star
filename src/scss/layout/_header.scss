@@ -3,8 +3,8 @@
 .page__header {
   width: 100vw;
   min-width: 320px;
-  /* min-height: 553px;*/
   min-height: 553px;
+  height: 100vh;
   background-image: url("../../images/cover.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +26,7 @@
       line-height: 3.125rem; /*50*/
     }
     &__subtitle {
-      font-size: 16px; /*16px*/
+      font-size: 1rem; /*16px*/
       line-height: 1.1875rem; /*19px*/
       padding-left: 2.1375rem; /*34.2px*/
       padding-right: 2.65625rem; /*42.5*/

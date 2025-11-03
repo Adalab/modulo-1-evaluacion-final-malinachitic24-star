@@ -1,16 +1,14 @@
 @use "../core/variables" as vars;
 
 .nav-button {
+  width: 36.4px;
+  height: 36.8px;
   background-color: vars.$color-secondary-detail;
   top: 0;
   left: 0;
   border: none;
-  z-index: 9999;
   position: fixed;
   display: flex;
-  width: 36.4px;
-  height: 36.8px;
-  flex-grow: 0;
   justify-content: center;
   align-items: center;
   transform: none;

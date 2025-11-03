@@ -3,23 +3,23 @@
   width: 100vw;
   min-width: 320px;
   height: auto;
-  margin-left: 0.8125em; /*13*/
+  margin-left: 0.8125rem; /*13*/
 
   &__subtitle {
-    margin-top: 2.125em; /*34px*/
+    margin-top: 2.125rem; /*34px*/
     font-family: vars.$font-simpletext;
     text-transform: uppercase;
-    font-size: 0.875em; /*14px*/
+    font-size: 0.875rem; /*14px*/
     color: vars.$color-secondary-detail;
-    line-height: 1.875em; /*30px*/
-    margin-right: 3.9375em; /*63*/
+    line-height: 1.875rem; /*30px*/
+    margin-right: 3.9375rem; /*63*/
     font-weight: 100;
   }
   &__title {
     text-transform: uppercase;
-    font-size: 1.375em; /*22px*/
-    line-height: 1.876em; /*30px*/
-    /*margin-right: 1.0625em;/*17*/
+    font-size: 1.375rem; /*22px*/
+    line-height: 1.876rem; /*30px*/
+    /*margin-right: 1.0625rem;/*17*/
     color: vars.$color-secondary-repetsubtitle;
   }
   &__paragraph {
@@ -27,7 +27,8 @@
     color: vars.$color-secondary-fp;
     line-height: 30px;
     font-size: 18px;
-    margin-right: 17px;
+    margin-right: 1.0625rem;
+    
   }
 
   &__button {
@@ -62,7 +63,7 @@
   gap: 0.5rem;
 
   &__header {
-    margin-top: 18px;
+    margin-top: 1.125px;
     &-slogan {
       color: #626262;
       font-size: 12px;
@@ -72,6 +73,7 @@
       color: vars.$color-secondary-repetsubtitle;
       font-size: 20px;
       text-transform: uppercase;
+      line-height: 30px;
     }
   }
   &__list {
