@@ -12,7 +12,6 @@
     font-size: 0.875rem; /*14px*/
     color: vars.$color-secondary-detail;
     line-height: 1.875rem; /*30px*/
-    margin-right: 3.9375rem; /*63*/
     font-weight: 100;
   }
   &__title {
@@ -25,10 +24,10 @@
   &__paragraph {
     font-family: vars.$font-simpletext;
     color: vars.$color-secondary-fp;
-    line-height: 30px;
-    font-size: 18px;
+    line-height: 1.875rem; /*30px*/
+    font-size: 1.125rem; /*18px*/
     margin-right: 1.0625rem;
-    
+    margin-top: 0.625px; /*10px*/
   }
 
   &__button {
@@ -36,13 +35,13 @@
     height: 45px;
     border-bottom: 2px solid;
     border-color: vars.$color-secondary-detail;
+    color: vars.$color-secondary-detail;
+    background-color: vars.$color-main;
     border-radius: 22.5px;
     font-size: 20px;
     text-align: center;
-    color: vars.$color-secondary-detail;
-    background-color: vars.$color-main;
     margin-bottom: 28px;
-    margin-top: 48px;
+    margin-top: 2.625rem; /*42*/
     margin-left: 2px;
     .section-white__button:hover {
       clear: inherit;
@@ -54,7 +53,6 @@
   background-color: #d9e4cc;
   width: 100%;
   min-width: 320px;
-  min-height: 656px;
   height: auto;
   display: grid;
   justify-items: center;
@@ -66,14 +64,14 @@
     margin-top: 1.125rem;
     &-slogan {
       color: #626262;
-      font-size: 12px;
+      font-size: 0.75rem; /*12px*/
       /*creo que hay un error y no debería tener line height 30*/
     }
     &-title {
       color: vars.$color-secondary-repetsubtitle;
-      font-size: 20px;
+      font-size: 1.25rem; /*20px*/
       text-transform: uppercase;
-      line-height: 30px;
+      line-height: 1.875; /*30px*/
     }
   }
   &__list {
@@ -110,5 +108,71 @@
     color: vars.$color-main;
     border-radius: 22.5px;
     margin-bottom: 30.7px;
+    line-height: 45px;
+  }
+
+  @media all and (min-width: 768px) {
+    .section-white {
+      min-height: 47.6875; /*763*/
+      margin-left: 2.31875rem; /*37.1*/
+      height: auto;
+
+      &__subtitle {
+        margin-top: 2.33125rem; /*37.3px*/
+        font-size: 1rem; /*16px*/
+        font-weight: 100;
+      }
+      &__title {
+        font-size: 2rem; /*32px*/
+      }
+      &__paragraph {
+        font-size: 1.125rem; /*20px*/
+        margin-right: 2.44375rem; /*39.1px*/
+        margin-top: 0.75625rem; /*12.1px*/
+      }
+      &__button {
+        width: 137.5px;
+        height: 45.4px;
+        border-bottom: 2px solid;
+        font-weight: 500;
+        margin-bottom: 3.84375rem; /*61.5*/
+        margin-top: 1.325rem; /*21.2*/
+      }
+    }
+    .section-green {
+      min-height: 25.625rem; /*410*/
+      height: auto;
+
+      &__header {
+        margin-top: 1.6875rem; /*27*/
+        &-slogan {
+          font-size: 0.75rem; /*12px*/
+          /*creo que hay un error y no debería tener line height 30*/
+          /*line-height: 1.87rem; /*30*/
+        }
+        &-title {
+          font-size: 1.75rem; /*28px*/
+          /*line-height: 2.8125; no se me ajusta usando line height /*45px*/
+        }
+      }
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* solo una columna*/
+        /* colocar elementos en el centro y poner espacios*/
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+        gap: 6rem;
+
+        &-suplies {
+          font-size: 18px;
+        }
+      }
+
+      &__button {
+        width: 184px;
+        height: 45px;
+      }
+    }
   }
 }
