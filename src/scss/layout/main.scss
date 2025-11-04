@@ -157,9 +157,8 @@
       }
       &__list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* solo una columna*/
+        grid-template-columns: 1fr 1fr 1fr; /* solo una columna*/
         /* colocar elementos en el centro y poner espacios*/
-        grid-template-rows: auto;
         justify-items: center;
         align-items: center;
         gap: 6rem;
