@@ -2,6 +2,7 @@
 .section-white {
   width: 100vw;
   min-width: 320px;
+  min-height: 376px;
   height: auto;
   margin-left: 0.8125rem; /*13*/
 
@@ -28,6 +29,8 @@
     font-size: 1.125rem; /*18px*/
     margin-right: 1.0625rem;
     margin-top: 0.625px; /*10px*/
+    /*width: 18.125rem; /*290*/
+    width: 90%; /*290*/
   }
 
   &__button {
@@ -110,68 +113,129 @@
     margin-bottom: 30.7px;
     line-height: 45px;
   }
+}
 
-  @media all and (min-width: 768px) {
-    .section-white {
-      min-height: 47.6875; /*763*/
-      margin-left: 2.31875rem; /*37.1*/
-      height: auto;
+@media all and (min-width: 768px) {
+  .section-white {
+    min-height: 20.8125rem; /*333*/
+    margin-left: 2.31875rem; /*37.1*/
+    height: auto;
 
-      &__subtitle {
-        margin-top: 2.33125rem; /*37.3px*/
-        font-size: 1rem; /*16px*/
-        font-weight: 100;
+    &__subtitle {
+      margin-top: 2.33125rem; /*37.3px*/
+      font-size: 1rem; /*16px*/
+      font-weight: 100;
+    }
+    &__title {
+      font-size: 2rem; /*32px*/
+    }
+    &__paragraph {
+      font-size: 1.125rem; /*20px*/
+      margin-right: 2.44375rem; /*39.1px*/
+      margin-top: 0.75625rem; /*12.1px*/
+    }
+    &__button {
+      width: 137.5px;
+      height: 45.4px;
+      border-bottom: 2px solid;
+
+      margin-bottom: 3.84375rem; /*61.5*/
+      margin-top: 1.325rem; /*21.2*/
+    }
+  }
+  .section-green {
+    min-height: 25.625rem; /*410*/
+    height: auto;
+
+    &__header {
+      margin-top: 1.6875rem; /*27*/
+      &-slogan {
+        font-size: 0.75rem; /*12px*/
+        /*creo que hay un error y no debería tener line height 30*/
+        /*line-height: 1.87rem; /*30*/
       }
-      &__title {
-        font-size: 2rem; /*32px*/
-      }
-      &__paragraph {
-        font-size: 1.125rem; /*20px*/
-        margin-right: 2.44375rem; /*39.1px*/
-        margin-top: 0.75625rem; /*12.1px*/
-      }
-      &__button {
-        width: 137.5px;
-        height: 45.4px;
-        border-bottom: 2px solid;
-        font-weight: 500;
-        margin-bottom: 3.84375rem; /*61.5*/
-        margin-top: 1.325rem; /*21.2*/
+      &-title {
+        font-size: 1.75rem; /*28px*/
+        /*line-height: 2.8125; no se me ajusta usando line height /*45px*/
       }
     }
-    .section-green {
-      min-height: 25.625rem; /*410*/
-      height: auto;
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* solo una columna*/
+      /* colocar elementos en el centro y poner espacios*/
+      justify-items: center;
+      align-items: center;
+      gap: 6rem;
 
-      &__header {
-        margin-top: 1.6875rem; /*27*/
-        &-slogan {
-          font-size: 0.75rem; /*12px*/
-          /*creo que hay un error y no debería tener line height 30*/
-          /*line-height: 1.87rem; /*30*/
-        }
-        &-title {
-          font-size: 1.75rem; /*28px*/
-          /*line-height: 2.8125; no se me ajusta usando line height /*45px*/
-        }
+      &-suplies {
+        font-size: 18px;
       }
-      &__list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /* solo una columna*/
-        /* colocar elementos en el centro y poner espacios*/
-        justify-items: center;
-        align-items: center;
-        gap: 6rem;
+    }
 
-        &-suplies {
-          font-size: 18px;
-        }
-      }
+    &__button {
+      width: 184px;
+      height: 45px;
+      margin-bottom: 50px;
+    }
+  }
+}
 
-      &__button {
-        width: 184px;
-        height: 45px;
+@media all and (min-width: 1280px) {
+  .section-white {
+    min-height: 21.4375px; /*343px*/
+    margin-left: 10.625rem; /*170px*/
+
+    &__subtitle {
+      margin-top: 2.4375rem; /*39px*/
+      margin-left: 0.5px;
+    }
+    &__title {
+      font-size: 2rem; /*32px*/
+    }
+    &__paragraph {
+      line-height: 1.875rem; /*30px*/
+      font-size: 1.25rem; /*20px*/
+      margin: 0rem;
+      margin-top: 1.375rem; /*22px*/
+      width: 58.875rem; /*942px*/
+    }
+
+    &__button {
+      width: 159.9px;
+      height: 45px;
+      margin-bottom: 59px; /*59px*/
+      margin-top: 2.5625rem; /*41*/
+      margin-left: 2.8px;
+    }
+  }
+
+  .section-green {
+    min-height: 24rem; /*387px*/
+    height: auto;
+
+    &__header {
+      &-title {
+        line-height: 2.8125rem; /*45px*/
       }
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* solo una columna*/
+      /* colocar elementos en el centro y poner espacios*/
+      justify-items: center;
+      align-items: center;
+      gap: 12rem;
+
+      &-suplies {
+        font-size: 18px;
+      }
+    }
+
+    &__button {
+      width: 184px;
+      height: 45px;
+      margin-bottom: 3rem;
+  
     }
   }
 }

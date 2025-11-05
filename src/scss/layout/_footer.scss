@@ -8,6 +8,7 @@
   position: relative;
   display: grid;
   justify-items: center;
+  
   &__button--arrow {
     width: 38.2px;
     height: 38.2px;
@@ -16,7 +17,7 @@
     align-items: center;
     border-radius: 50%;
     border: none;
-    position:absolute;
+    position: absolute;
     bottom: 406px;
 
     svg {
@@ -56,54 +57,61 @@
 
 @media all and (min-width: 768px) {
   .footer {
-  min-height: 240px;
+    min-height: 15rem; /*240px*/
 
-  &__button--arrow {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: none;
-    position:absolute;
-    bottom: 406px;
-  }
-
-  &__content {
-    padding-top: 56px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas: "others link1 link2";
-    align-content: start;
-    align-items: start;
-    text-align: left;
-    justify-items: left;
+    &__button--arrow {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: none;
+      position: absolute;
+      bottom: 217px;
     
-    gap: 0.5rem;
-
-    gap: 1rem;
-
-    &__link {
-      display: grid;
-      justify-items: center;
-      text-transform: uppercase;
-      line-height: 30px;
-      font-size: 16px;
-      list-style: none;
-      justify-items: left;
     }
 
-    &__others {
+    &__content {
+      padding-top: 3.5rem; /*56px*/
       display: grid;
-      grid-area: others;
-      justify-self: start;
-      align-items: flex-start;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: auto;
+      grid-template-areas: "others link1 link2";
+      align-content: start;
+      align-items: start;
+      text-align: left;
       justify-items: left;
+      gap: 6rem;
+
+      &__link {
+        display: grid;
+        justify-items: center;
+        text-transform: uppercase;
+        line-height: 30px;
+        font-size: 16px;
+        list-style: none;
+        justify-items: left;
+      }
+
+      &__others {
+        display: grid;
+        grid-area: others;
+        justify-self: start;
+        align-items: flex-start;
+        justify-items: left;
+      }
     }
   }
 }
 
+@media all and (min-width: 1280px) {
 
+  .footer {
+    min-height: 240px; 
+    &__content {
+      padding-top: 3.6875rem; /*59*/
+      gap: 20rem;
+    }
+  }
 }
