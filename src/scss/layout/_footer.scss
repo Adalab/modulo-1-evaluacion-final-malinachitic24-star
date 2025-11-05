@@ -41,16 +41,16 @@
       display: grid;
       justify-items: center;
       text-transform: uppercase;
-      line-height: 30px;
-      font-size: 16px;
+      line-height: 1.876rem; /*30px*/
+      font-size: 1rem;
       list-style: none;
     }
 
     &__others {
       display: grid;
       justify-items: center;
-      line-height: 30px;
-      font-size: 14px;
+      line-height: 1.876rem; /*30px*/
+      font-size: 0.875;/*14px*/
       align-items: center;
     }
   }
@@ -86,21 +86,19 @@
       gap: 6rem;
 
       &__link {
-        display: grid;
-        justify-items: center;
-        text-transform: uppercase;
-        line-height: 30px;
-        font-size: 16px;
-        list-style: none;
+      
         justify-items: left;
       }
 
       &__others {
         display: grid;
         grid-area: others;
-        justify-self: start;
-        align-items: flex-start;
-        justify-items: left;
+       display: grid;
+      justify-items: center;
+      text-transform: uppercase;
+      line-height: 1.876rem; /*30px*/
+      font-size: 1rem;
+      list-style: none;
       }
     }
   }

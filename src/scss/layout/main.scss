@@ -61,7 +61,7 @@
 .section-green {
   background-color: #d9e4cc;
   width: 100%;
-  min-width: 320px;
+  min-width: 20rem; /*20*/
   height: auto;
   display: grid;
   justify-items: center;
@@ -75,7 +75,7 @@
       color: #626262;
       font-size: 0.75rem; /*12px*/
       /*creo que hay un error y no debería tener line height 30*/
-      line-height: 30px;
+      line-height: 1.875; /*30px*/
     }
     &-title {
       color: vars.$color-secondary-repetsubtitle;
@@ -197,7 +197,7 @@
 
 @media all and (min-width: 1280px) {
   .section-white {
-    min-height: 21.4375px; /*343px*/
+    min-height: 21.4375rem; /*343px*/
     margin-left: 10.625rem; /*170px*/
 
     &__subtitle {

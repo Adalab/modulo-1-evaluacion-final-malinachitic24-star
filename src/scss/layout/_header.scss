@@ -10,6 +10,20 @@
   background-size: cover;
   background-position: 82%;
 
+  .nav-button {
+    width: 36.4px;
+    height: 36.8px;
+    background-color: vars.$color-secondary-detail;
+    top: 0;
+    left: 0;
+    border: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: none;
+  }
+
   .hero {
     color: vars.$color-main;
     display: flex;
@@ -101,16 +115,14 @@
       height: 54.26rem;
 
       &__title {
-        /*409px*/
-        /*71.7*/ /*61.7*/ /*margin: 53px;*/
-        width: 600px;
+        width: 37.5rem; /*600px*/
       }
 
       &__button--scroll-down {
         width: 45px;
         height: 45px;
-        margin-top: 0px; /*25.2px*/
-        margin-bottom: 54px;
+        margin-top: 0px; 
+        margin-bottom: 54px; 
       }
     }
   }
@@ -118,9 +130,6 @@
 
 @media all and (min-width: 1437px) {
   .page__header {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../../images/cover.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
   }
