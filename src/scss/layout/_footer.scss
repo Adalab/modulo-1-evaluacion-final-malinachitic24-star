@@ -8,7 +8,7 @@
   position: relative;
   display: grid;
   justify-items: center;
-  
+
   &__button--arrow {
     width: 38.2px;
     height: 38.2px;
@@ -19,6 +19,7 @@
     border: none;
     position: absolute;
     bottom: 406px;
+    animation: mover 2s linear infinite alternate;
 
     svg {
       fill: vars.$color-secondary-detail;
@@ -55,6 +56,15 @@
   }
 }
 
+@keyframes mover {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateY(-25px);
+  }
+}
+
 @media all and (min-width: 768px) {
   .footer {
     min-height: 15rem; /*240px*/
@@ -62,26 +72,17 @@
     &__button--arrow {
       width: 45px;
       height: 45px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      border: none;
-      position: absolute;
       bottom: 217px;
-    
     }
 
     &__content {
       padding-top: 3.5rem; /*56px*/
-      display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-auto-rows: auto;
       grid-template-areas: "others link1 link2";
       align-content: start;
       align-items: start;
       text-align: left;
-      justify-items: left;
+
       gap: 6rem;
 
       &__link {
@@ -106,9 +107,8 @@
 }
 
 @media all and (min-width: 1280px) {
-
   .footer {
-    min-height: 240px; 
+    min-height: 240px;
     &__content {
       padding-top: 3.6875rem; /*59*/
       gap: 20rem;

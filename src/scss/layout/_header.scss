@@ -117,13 +117,11 @@
 }
 
 @media all and (min-width: 1437px) {
-
-.page__header {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../../images/cover.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
- }
+  .page__header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../images/cover.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
-
